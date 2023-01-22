@@ -9,16 +9,15 @@ type Props = {
 }
 
 export default ({
-    width = 170,
-    height = 28,
+    width = 340,
+    height = 25,
 }: Props) => (
-    <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 170 28" style="enable-background:new 0 0 170 28;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;}
-	.st1{fill:#1D1D1B;}
-	.st2{fill:#EE7D45;}
-</style>
+    <svg width={width}
+    height={height}
+    viewBox='0 0 170 28'
+    fill='none'
+    xmlns='http://www.w3.org/2000/svg'>
+
 <g>
 	<g>
 		<polygon class="st0" points="13.4,12.09 12.88,12.06 12.88,13.33 13.4,13.47 		"/>
