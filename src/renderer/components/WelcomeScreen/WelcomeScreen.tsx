@@ -43,10 +43,10 @@ function WelcomeScreen({
     const slides = useMemo(() => [
         {
             key: 'welcome',
-            title: formatMessage({id: 'renderer.components.welcomeScreen.slides.welcome.title', defaultMessage: 'Welcome'}),
+            title: formatMessage({id: 'renderer.components.welcomeScreen.slides.welcome.title', defaultMessage: 'Olá'}),
             subtitle: formatMessage({
                 id: 'renderer.components.welcomeScreen.slides.welcome.subtitle',
-                defaultMessage: 'Mattermost is an open source platform for developer collaboration. Secure, flexible, and integrated with the tools you love.',
+                defaultMessage: 'Worskpace é o principal canal onde os colaboradores da SirCruX Studios se comunicam e trocam experiências',
             }),
             image: (
                 <img
@@ -58,11 +58,11 @@ function WelcomeScreen({
         },
         {
             key: 'channels',
-            title: formatMessage({id: 'renderer.components.welcomeScreen.slides.channels.title', defaultMessage: 'Channels'}),
+            title: formatMessage({id: 'renderer.components.welcomeScreen.slides.channels.title', defaultMessage: 'Canais'}),
             subtitle: (
                 <FormattedMessage
                     id='renderer.components.welcomeScreen.slides.channels.subtitle'
-                    defaultMessage='All of your team’s communication in one place.<br></br>Secure collaboration, built for developers.'
+                    defaultMessage='A comunicação do nosso time se encontra aqui'
                     values={{
                         br: (x: React.ReactNode) => (<><br/>{x}</>),
                     }}
@@ -77,10 +77,10 @@ function WelcomeScreen({
         },
         {
             key: 'playbooks',
-            title: formatMessage({id: 'renderer.components.welcomeScreen.slides.playbooks.title', defaultMessage: 'Playbooks'}),
+            title: formatMessage({id: 'renderer.components.welcomeScreen.slides.playbooks.title', defaultMessage: 'Notion'}),
             subtitle: formatMessage({
                 id: 'renderer.components.welcomeScreen.slides.palybooks.subtitle',
-                defaultMessage: 'Move faster and make fewer mistakes with checklists, automations, and tool integrations that power your team’s workflows.',
+                defaultMessage: 'Notion é a ferramenta utilizada para gerenciar tasks, roadmaps e para mapear o conhecimento interno da SirCruX.',
             }),
             image: (
                 <img
@@ -91,10 +91,10 @@ function WelcomeScreen({
         },
         {
             key: 'boards',
-            title: formatMessage({id: 'renderer.components.welcomeScreen.slides.boards.title', defaultMessage: 'Boards'}),
+            title: formatMessage({id: 'renderer.components.welcomeScreen.slides.boards.title', defaultMessage: 'Drive'}),
             subtitle: formatMessage({
                 id: 'renderer.components.welcomeScreen.slides.boards.subtitle',
-                defaultMessage: 'Ship on time, every time, with a project and task management solution built for digital operations.',
+                defaultMessage: 'O Google Drive é onde os arquivos de projetos colaborativos são compartilhados e versionados',
             }),
             image: (
                 <img
@@ -151,7 +151,7 @@ function WelcomeScreen({
                             )}
                             onClick={handleOnGetStartedClick}
                         >
-                            {formatMessage({id: 'renderer.components.welcomeScreen.button.getStarted', defaultMessage: 'Get Started'})}
+                            {formatMessage({id: 'renderer.components.welcomeScreen.button.getStarted', defaultMessage: 'Comece agora'})}
                         </button>
                     </div>
                 </div>
