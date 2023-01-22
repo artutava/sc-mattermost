@@ -89,7 +89,7 @@ body {
 }
 
 .topBar.darkMode .three-dot-menu i.icon-dots-vertical.isFocused {
-  background-color: #383A3F;
+  background-color: #ffc60c;
 }
 
 .topBar.macOS .three-dot-menu i.icon-dots-vertical.isFocused {
@@ -111,6 +111,9 @@ body {
 
 .topBar.darkMode .three-dot-menu {
   color: rgba(243,243,243,0.7);
+  background: url('./thumbnails/sc-logo-top-white.svg');
+  background-size: 80% 80%;
+  background-position:center;
 }
 
 .topBar.darkMode .title-bar-btns {

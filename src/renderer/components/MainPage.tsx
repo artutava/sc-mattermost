@@ -500,11 +500,17 @@ class MainPage extends React.PureComponent<Props, State> {
                         tabIndex={0}
                         aria-label={intl.formatMessage({id: 'renderer.components.mainPage.contextMenu.ariaLabel', defaultMessage: 'Context menu'})}
                     >
-                        <i
+                        {/* <i
                             className={classNames('icon-dots-vertical', {
                                 isFocused: this.state.threeDotsIsFocused,
                             })}
-                        />
+                        /> */}
+
+                        <div class="logo-sc-top">
+                            
+                        </div>
+
+                        {/* SIRCRUX LOGO TOPO */}
                     </button>
                     {this.props.teams.length !== 0 && (
                         <TeamDropdownButton

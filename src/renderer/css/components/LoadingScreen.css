@@ -26,8 +26,8 @@ body {
 }
 
 .LoadingScreen--darkMode {
-    --background-color-highlight: #28427B;
-    --background-color: #1E325C;
+    --background-color-highlight: #2c2c2c;
+    --background-color: #1a1a1a;
     --stipple-color: #14213E;
     --stipple-opacity: 0.8;
 }
