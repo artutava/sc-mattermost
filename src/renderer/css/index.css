@@ -112,8 +112,9 @@ body {
 .topBar.darkMode .three-dot-menu {
   color: rgba(243,243,243,0.7);
   background: url('./thumbnails/sc-logo-top-white.svg');
-  background-size: 80% 80%;
+  background-size: 90% 90%;
   background-position:center;
+  background-repeat: no-repeat;
 }
 
 .topBar.darkMode .title-bar-btns {
