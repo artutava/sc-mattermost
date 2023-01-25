@@ -43,7 +43,7 @@ function WelcomeScreen({
     const slides = useMemo(() => [
         {
             key: 'welcome',
-            title: formatMessage({id: 'renderer.components.welcomeScreen.slides.welcome.title', defaultMessage: 'Olá'}),
+            title: formatMessage({id: 'renderer.components.welcomeScreen.slides.welcome.title', defaultMessage: 'Bem-vindo!'}),
             subtitle: formatMessage({
                 id: 'renderer.components.welcomeScreen.slides.welcome.subtitle',
                 defaultMessage: 'Worskpace é o principal canal onde os colaboradores da SirCruX Studios se comunicam e trocam experiências',

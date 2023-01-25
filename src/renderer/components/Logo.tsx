@@ -10,12 +10,12 @@ type Props = {
 
 export default ({
     width = 340,
-    height = 25,
+    height = 100,
 }: Props) => (
     <svg width={width}
     height={height}
-    viewBox='0 0 170 28'
-    fill='none'
+    viewBox='0 0 340 100'
+    fill='white'
     xmlns='http://www.w3.org/2000/svg'>
 
 <g>
