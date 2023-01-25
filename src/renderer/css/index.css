@@ -70,6 +70,10 @@ body {
   color: rgba(61,60,64,0.7);
   -webkit-app-region: no-drag;
   background-color: transparent;
+  background: url('./thumbnails/sc-logo-top-black.svg');
+  background-size: 90% 90%;
+  background-position:center;
+  background-repeat: no-repeat;
 }
 
 .topBar .three-dot-menu i.icon-dots-vertical {
