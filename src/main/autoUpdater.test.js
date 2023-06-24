@@ -44,7 +44,7 @@ jest.mock('main/notifications', () => ({
     displayUpgrade: jest.fn(),
     displayRestartToUpgrade: jest.fn(),
 }));
-jest.mock('main/windows/windowManager', () => ({
+jest.mock('main/windows/mainWindow', () => ({
     sendToRenderer: jest.fn(),
 }));
 
@@ -116,6 +116,8 @@ describe('main/autoUpdater', () => {
 
         afterEach(() => {
             jest.runAllTimers();
+            jest.runOnlyPendingTimers();
+            jest.useRealTimers();
         });
 
         it('should add a new timeout', () => {
@@ -151,6 +153,12 @@ describe('main/autoUpdater', () => {
 
         afterEach(() => {
             jest.resetAllMocks();
+        });
+
+        afterAll(() => {
+            jest.runOnlyPendingTimers();
+            jest.clearAllTimers();
+            jest.useRealTimers();
         });
 
         it('should show dialog if update is not available', () => {
